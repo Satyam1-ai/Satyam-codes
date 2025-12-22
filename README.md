@@ -1,4 +1,4 @@
-echo "# Satyam-Codes 🚀
+# Satyam-Codes 
 
 I will be uploading more LeetCode questions here slowly but surely, focusing on providing **optimised solutions** and showcasing my **logical approach** to solving them.
 
