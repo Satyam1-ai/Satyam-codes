@@ -1,4 +1,3 @@
-# Satyam-Codes 
 
 I will be uploading more LeetCode questions here slowly but surely, focusing on providing **optimised solutions** and showcasing my **logical approach** to solving them.
 
@@ -7,4 +6,4 @@ I will be uploading more LeetCode questions here slowly but surely, focusing on 
 -  Clean and commented C++ code
 -  Logic breakdowns for complex problems
 
-**Happy Coding!**" > README.md
+**Happy Coding!**
