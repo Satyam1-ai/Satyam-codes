@@ -29,7 +29,9 @@ using namespace std;
 
 
 bool findPowerofTwo(int n){
-    
+    return n>0 && (n & (n-1) )==0 ;    //On leetCode this might fail ...because 2^31 ...when it is a negetive number ..it wraps around 
+                                        //When you do ..n-1 that is why you have convert to LL ..easiest way to do this ..is 
+                                        //just do ..(1LL * n-1) ....
 }
 
 
