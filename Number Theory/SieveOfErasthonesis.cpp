@@ -32,12 +32,12 @@ vector<bool> SieveofEr(int n){
     A[1]=false;
     int i=2;
     while(i*i<=n){
-        int j=2;
-        int temp=i*j;
-        while(temp<=n){
-            A[temp]=false;
-            j++;
-            temp=i*j;
+        if(A[i]){
+            int j=i*i;
+            while(j<=n){
+                A[j]=false;
+                j=j+i;
+            }
         }
         i++;
     }
