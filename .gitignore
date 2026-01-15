@@ -1,5 +1,17 @@
-.vscode/
+# Executables
 *.exe
+*.out
+a.exe
+a.out
 
+# Temp files
+tempCodeRunnerFile.*
+tempCodeRunnerFile.cpp
 
+# macOS junk
+.DS_Store
+
+# VS Code / common IDE junk (optional but good)
+.vscode/
+*.code-workspace
 
