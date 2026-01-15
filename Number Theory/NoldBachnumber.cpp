@@ -63,7 +63,7 @@ int Nordbach(int n){
     vector<int> odd_primes=generatePrimes(n);
     int cnt=0;
     for(int i=2;i<odd_primes.size();i++){
-        int temp=odd_primes[i-1]+odd_primes[i-2];
+        int temp=odd_primes[i-1]+odd_primes[i-2]+1;
         if(temp/2==((odd_primes[i])-1)/2){
             cnt++;
         }
