@@ -1,17 +1,14 @@
-# Executables
-*.exe
-*.out
-a.exe
-a.out
 
-# Temp files
-tempCodeRunnerFile.*
-tempCodeRunnerFile.cpp
+!*.cpp
+!*.hpp
+!*.h
+!*.md
+!*.gitignore
 
-# macOS junk
+# 3. Do NOT ignore folders (so Git can look inside them for .cpp files)
+!*/
+
+# 4. Specific junk files that might match the rules above
 .DS_Store
-
-# VS Code / common IDE junk (optional but good)
-.vscode/
-*.code-workspace
+tempCodeRunnerFile.*
 
