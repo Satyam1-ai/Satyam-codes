@@ -28,16 +28,27 @@ And you have to figure out the final configuration of the grid after all these c
 
 
 void finalConfiguration(std::vector<std::vector<char>> &v, int n, int m) {
-    for (int i = 0; i < m; i++) {
-        int available_row = n - 1; 
+    for (int i = 0; i < m; i++) { 
+        int available=-1;
         for (int j = n - 1; j >= 0; j--) {
-            if (v[j][i] == 'o') {
-                available_row = j - 1;
-            } 
-            else if (v[j][i] == '*') {
-                v[j][i] = '.'; 
-                v[available_row][i] = '*'; 
-                available_row--; 
+            if(v[j][i]=='.'){
+                if(available!=-1){
+                    available=std::max(available,j);
+                }
+                else
+                    available=j;
+            }
+            else if(v[j][i]=='o'){
+                available=j-1;
+                if(available<j)
+                    available=-1;
+            }
+            else{
+                if(available!=-1){
+                    v[j][i]='.';
+                    v[available][i]='*';
+                    available--;
+                }
             }
         }
     }
